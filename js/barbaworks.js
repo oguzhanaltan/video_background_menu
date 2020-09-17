@@ -19,6 +19,10 @@ $(function() {
             }
 
 
+            var tl = new TimelineMax({repeat:-1,repeatDelay:2})
+    .to('.alignright',0.5,{rotation:30})
+    .to('.alignright',5,{rotation:0,ease:Elastic.easeOut.config(0.9,0.1)});
+
             
             $('.menuItem').toggleClass("hidden");
 

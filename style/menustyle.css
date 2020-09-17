@@ -1,0 +1,148 @@
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}  
+        
+.menupage {
+  padding: 0 1.2rem;
+}
+
+.menupage h3 {
+  display:inline-block;
+  font-size:32px;
+  line-height:36px;
+  position:relative;
+  margin-top:28px;
+  margin-bottom:15px;
+}
+.menupage h3:before{
+  left:-40px;
+  height:0;
+  height:1px;
+}
+.menupage h3:before, .menupage h3:after {
+  content:"";
+  position:absolute;
+  bottom:18px;
+  height:1px;
+  width:40px;
+  margin:0 -15px;
+  background-color:#ffffff;
+}
+.menupage h3:after{
+  right:-40px;
+}
+.menupage h5 {
+  font-size:16px;
+  line-height:22px;
+  margin:0 0 15px;
+  font-weight:400;
+}
+.menupage .item {
+  position:relative;
+  overflow:hidden;
+  /*margin-bottom:20px;*/
+}
+.menupage .item h4, .menupage .item p {
+  display:block;
+  clear:both;
+  color:#ffffff;
+}
+.menupage .item p {
+  clear:both;
+  color:#dedcda;
+  margin-left:5px;
+  font-size: 18px;
+}
+
+.menupage .item span:first-of-type {
+  /*background-image:linear-gradient(to right,rgba(251,251,251,251) 33%,rgba(0,0,0,0) 0%);*/
+  background-position:bottom;
+  background-size:3px 1px;
+  background-repeat:repeat-x;
+  height:1px;
+  width:100%;
+  position:absolute;
+  top:22px;
+}
+
+.menupage .item span:nth-of-type(2n) {
+  position:absolute;
+  font-size:22px;
+  font-weight:400;
+  right:0;
+  padding-left:8px;
+  z-index:0;
+}
+.menupage .item h4 {
+  display:inline-block;
+  padding-right:8px;
+  font-size:1.25rem;
+  max-width:80%;
+  text-transform:capitalize;
+  margin-bottom:4px;
+  position:relative;
+}
+
+/*Dinamik css ayarları*/
+@media only screen and (min-height: 550px) and (max-height: 650px) {
+  .menupage .item h4 {
+    font-size: 1.0rem;
+  }
+
+  .menupage .item p {
+    font-size: 15px !important;
+  }
+
+  .menupage .item span {
+    font-size: 20px !important;
+  }
+
+}
+
+@media only screen and (min-height: 490px) and (max-height: 549px) {
+  .menupage .item h4 {
+    font-size: 0.8rem;
+  }
+
+  .menupage .item p {
+    font-size: 13px !important;
+  }
+
+  .menupage .item span {
+    font-size: 18px !important;
+  }
+
+  .inner i {
+    font-size: 1.2em !important;
+  }
+}
+
+@media only screen and (max-height: 489px) {
+  .menupage .item h4 {
+    font-size: 1.0rem;
+
+  }
+
+  .menupage .item p {
+    font-size: 15px !important;
+    display: none !important;
+  }
+
+  .menupage .item span {
+    font-size: 20px !important;
+  }
+
+.inner i {
+    font-size: 1.6em !important;
+  }
+
+#textbox {
+    margin-top: 20px;
+  }
+
+ 
+
+}

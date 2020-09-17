@@ -11,6 +11,14 @@ app.renderer.view.style.display = "block";
 app.renderer.autoDensity = true;
 app.renderer.resize(window.innerWidth, window.innerHeight);
 
+//Ekran döndürülmesini tespit edip videoyu tam ekran yap
+/*
+window.addEventListener("orientationchange", handleOrientation, true);
+function handleOrientation(event) {
+  //alert(window.orientation);
+  app.renderer.resize(window.innerWidth, window.innerHeight);
+}
+*/
 
 //-------------------------------------------------
   var video = document.getElementById('pacific');
