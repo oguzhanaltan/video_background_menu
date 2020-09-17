@@ -1,28 +1,68 @@
 /* Loading Screen Styling */
 
-.loading-screen {
-  z-index: 99999999;
-  position: relative;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  background-color: #1c1b1b;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loading-container {
+#preload {
   position: fixed;
+  background-color: #1c1b1b;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: hidden;
   z-index: 99999999;
   pointer-events: none;
 }
 
 /* Loading Screen Styling Ends */
+
+
+#logo_preload {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  left: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+
+#bars {
+    position: absolute;
+    z-index: 20;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    
+  }
+
+#bars .bar {
+      height: 20vh;
+      background: #ffffff;
+      position: absolute;
+      width: 100%;
+      right: 0;
+    }
+
+#bars #bar1 {
+      top: 0%;
+    }
+
+#bars #bar2 {
+      top: 20%;
+    }
+
+#bars #bar3 {
+      top: 40%;
+    }
+
+#bars #bar4 {
+      top: 60%;
+    }
+    
+#bars #bar5 {
+      top: 80%;
+    }

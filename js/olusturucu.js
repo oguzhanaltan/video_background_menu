@@ -47,12 +47,8 @@ class VideoOlusturucu {
 
                                       var tl = new TimelineLite();
                                       
-                                      //Loading kayarak kapanıyor
-                                      /*
-                                      var space = $(window).width();
-                                      tl.to('.loading-screen', 1, { x: - 2 * space, ease: Power1.easeOut})
-                                      */
-
+                                      
+/*
                                     tl.to('.loading-screen',0.5,{opacity:0,onComplete:function(){ 
 
                                     $('.menuItem').toggleClass("hidden");
@@ -63,7 +59,26 @@ class VideoOlusturucu {
                                       {rotationX:0, ease:Elastic.easeOut}, 0.4)
 
                                     }});
+*/
 
+                                    tl
+                                    .to("#logo_preload", {duration: 0.3,opacity:0})
+                                    .to("#bars", {duration:0.3,opacity:1}, "-=0.2")
+                                    .to("#bar1", {duration:0.3,width:0}, "-=0.1")
+                                    .to("#bar2", {duration:0.3,width:0}, "-=0.1")
+                                    .to("#bar3", {duration:0.3,width:0}, "-=0.1")
+                                    .to("#bar4", {duration:0.3,width:0}, "-=0.1")
+                                    .to("#bar5", {duration:0.3,width:0}, "-=0.1")
+                                    .to("#preload", {duration: 0.3, height:0,onComplete:function(){ 
+
+                                    $('.menuItem').toggleClass("hidden");
+
+                                    tl
+                                    .staggerFromTo('li', 1.5,
+                                      {rotationX:-90, transformOrigin:"50% 0%"},
+                                      {rotationX:0, ease:Elastic.easeOut}, 0.4)
+
+                                    }});
 
                                   }
                                   
